@@ -23,8 +23,6 @@ module.exports = {
                 return res.send('You are not an ' + role +', you do not have permission to access this website');
             }
             res.locals.account = account;
-            
-            
             next();
         }
     }
